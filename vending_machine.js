@@ -16,7 +16,7 @@ function vending_machine (item, money){
                 console.log('Here is your ' + item);
                 break;
             }
-         if( money > items[i][1]){
+         if( money == 100 || money == 200 || money == 500 && money > items[i][1]){
              change = money - items[i][1];
                 console.log("take your " + change);
             console.log('Here is your ' + item);
